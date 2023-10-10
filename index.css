@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar-brand img {
+    width: 115px; /* Adjust this value as needed to control the size of the circle */
+    height: 70px; /* Adjust this value to match the width */
+    border-radius: 50%; /* Make the image a circle by setting the border-radius to 50% */
+}
+.navbar {
+    background-color: #e3e3e6; /* Set the background color to gray (you can use any gray shade you prefer) */
+}
+.navbar-nav {
+    margin-left: auto; /* Push the list to the right */
+}
+.nav-item{
+   margin-right: 45px; 
+}
+.navbar-nav .nav-item {
+    position: relative; /* Position relative for pseudo-elements */
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    color: #FF5733; /* Change text color on hover */
+}
+
+.navbar-nav .nav-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Change the underline height as needed */
+    bottom: 0;
+    left: 0;
+    background-color: #FF5733; /* Underline color on hover */
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+p{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
